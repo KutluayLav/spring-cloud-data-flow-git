@@ -1,0 +1,20 @@
+java  -jar spring-cloud-dataflow-server-2.10.2.jar --spring.datasource.url="jdbc:sqlserver://127.0.0.1:1433;database=sistas-dataflow;encrypt=true;trustServerCertificate=true" --spring.datasource.username="sa" --spring.datasource.password="Sistas2015development" --spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver --spring.rabbitmq.host="127.0.0.1" --spring.rabbitmq.port="5672" --spring.rabbitmq.username="guest" --spring.rabbitmq.password="guest"
+
+
+java  -jar spring-cloud-dataflow-server-2.10.2.jar --spring.datasource.url="jdbc:sqlserver://127.0.0.1:1433;database=sistas-dataflow;encrypt=true;trustServerCertificate=true" --spring.datasource.username="sa" --spring.datasource.password="Sistas2015development" --spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver --spring.rabbitmq.host="127.0.0.1" --spring.rabbitmq.port="5672" --spring.rabbitmq.username="guest" --spring.rabbitmq.password="guest" --spring.cloud.skipper.client.serverUri=http://127.0.0.1:7577/api
+
+
+
+java  -jar spring-cloud-dataflow-server-2.10.2.jar --spring.datasource.url="jdbc:sqlserver://127.0.0.1:1433;database=sistas-dataflow;encrypt=true;trustServerCertificate=true" --spring.datasource.username="sa" --spring.datasource.password="Sistas2015development" --spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver --spring.cloud.skipper.client.serverUri=http://127.0.0.1:7577/api --spring.cloud.dataflow.applicationProperties.stream.spring.cloud.stream.kafka.binder.brokers=192.168.12.84:30471 --spring.cloud.dataflow.applicationProperties.stream.spring.cloud.stream.kafka.binder.zkNodes=192.168.12.84:32181
+
+
+
+
+
+shell
+--------
+java -jar spring-cloud-dataflow-shell-2.10.2.jar
+
+skipper
+--------
+java -jar spring-cloud-skipper-server-2.9.2.jar
